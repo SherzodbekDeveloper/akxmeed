@@ -6,6 +6,7 @@ import { Suspense } from 'react'
 import { Analytics } from "@vercel/analytics/next"
 import Footer from '@/components/footer'
 import { TransitionProvider } from '@/components/transition-provider'
+import { Toaster } from 'sonner'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,10 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="dark" storageKey="sherzod-portfolio-theme">
           <Suspense fallback={null}>
             <div className="min-h-screen flex flex-col">
-              <main className="flex-1">   <TransitionProvider>{children}</TransitionProvider></main>
+              <main className="flex-1">
+                <TransitionProvider>{children}</TransitionProvider>
+                <Toaster position='top-center' />
+              </main>
               <div className="[&:has(~#home-hero)]:hidden">
                 <Footer />
               </div>
