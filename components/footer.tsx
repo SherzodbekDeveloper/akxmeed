@@ -3,10 +3,10 @@ import { motion } from "framer-motion"
 import { Instagram, Youtube, Send, Linkedin, Heart } from "lucide-react"
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Send, href: "#", label: "Telegram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Instagram, href: "https://instagram.com/akxmeed", label: "Instagram" },
+  { icon: Youtube, href: "https://youtube.com/", label: "YouTube" },
+  { icon: Send, href: "https://t.me/", label: "Telegram" },
+  { icon: Linkedin, href: "https://linkedin.com/", label: "LinkedIn" },
 ]
 
 export default function Footer() {
@@ -19,10 +19,14 @@ export default function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {/* Logo and Description */}
+          
+          {/* Logo and Tagline */}
           <div className="text-center md:text-left">
-            
-            <p className="text-sm text-muted-foreground">Korean Language Teacher, Businessman & Marketologist</p>
+            <h2 className="text-lg font-bold text-foreground">Ali Sakhobovich</h2>
+            <p className="text-sm text-muted-foreground mt-1">
+              Blogger • Marketer • Entrepreneur <br />
+              Based in Seoul, South Korea
+            </p>
           </div>
 
           {/* Social Links */}
@@ -31,6 +35,8 @@ export default function Footer() {
               <motion.a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent transition-colors p-2 rounded-full hover:bg-accent/10"
                 aria-label={social.label}
                 whileHover={{ scale: 1.1, y: -2 }}
@@ -46,7 +52,7 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground flex items-center justify-center md:justify-end gap-1">
               Made with <Heart size={14} className="text-accent" /> by Akhmed
             </p>
-            <p className="text-xs text-muted-foreground mt-1">© 2024 All rights reserved</p>
+            <p className="text-xs text-muted-foreground mt-1">© {new Date().getFullYear()} All rights reserved</p>
           </div>
         </div>
       </div>

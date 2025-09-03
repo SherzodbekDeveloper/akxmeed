@@ -6,6 +6,7 @@ import Navigation from "@/components/navigation"
 import { Mail, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { EnhancedTransitionLink } from '@/utils/transitionLinks'
 
 export default function HomePage() {
   return (
@@ -15,7 +16,6 @@ export default function HomePage() {
       <section id="home-hero" className="pt-20 sm:pt-24 pb-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[80vh]">
-            {/* Left Side - Portrait */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -53,7 +53,6 @@ export default function HomePage() {
             </motion.div>
 
 
-            {/* Right Side - Content */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -90,9 +89,11 @@ export default function HomePage() {
                   transition={{ duration: 0.8, delay: 0.8 }}
                   className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl text-pretty mx-auto lg:mx-0"
                 >
-                  As a skilled Korean Language Teacher, Businessman, and Marketologist, I am dedicated to bridging
-                  cultures through education and innovative business solutions. Explore my journey in language education
-                  and business development.
+                  Meet <strong>Ali Sakhobovich</strong> — a passionate bloger, marketing strategist, and
+                  entrepreneur. Founder of <strong>Ahmed School</strong> and <strong>Ahmed Agency</strong> in Jizzakh,
+                  he’s building bridges between cultures and empowering young minds to succeed.
+                  Ahmed School is where Korean language learning becomes inspiring and practical,
+                  while Ahmed Agency helps businesses grow with fresh, bold strategies.
                 </motion.p>
               </div>
 
@@ -102,18 +103,18 @@ export default function HomePage() {
                 transition={{ duration: 0.8, delay: 1 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                <Link href="/projects">
+                <EnhancedTransitionLink href="/about">
                   <Button size="lg" className="group w-full sm:w-auto hover-lift">
-                    View Projects
+                    About me
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
-                <Link href="/contact">
+                </EnhancedTransitionLink>
+                <EnhancedTransitionLink href="/contact">
                   <Button variant="outline" size="lg" className="group bg-transparent w-full sm:w-auto hover-lift">
                     <Mail className="mr-2 h-4 w-4 group-hover:animate-pulse" />
                     Contact Me
                   </Button>
-                </Link>
+                </EnhancedTransitionLink>
               </motion.div>
             </motion.div>
           </div>

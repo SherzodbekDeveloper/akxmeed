@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { Instagram, Youtube, Send, Linkedin, Menu, X } from "lucide-react"
+import { Instagram, Youtube, Send, Menu, X } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { useState } from "react"
 import { EnhancedTransitionLink } from '@/utils/transitionLinks'
@@ -15,10 +15,9 @@ const navItems = [
 ]
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/akxmeed", label: "Instagram" },
   { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Send, href: "#", label: "Telegram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Send, href: "https://t.me/akxmeed", label: "Telegram" },
 ]
 
 export default function Navigation() {
@@ -33,20 +32,19 @@ export default function Navigation() {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-   
+
         <Link href="/" className="text-lg font-bold tracking-tight">
           Akxmeed
         </Link>
 
-      
+
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <EnhancedTransitionLink
               key={item.name}
               href={item.href}
-              className={`relative text-sm font-medium transition-colors hover:text-accent ${
-                pathname === item.href ? "text-foreground" : "text-muted-foreground"
-              }`}
+              className={`relative text-sm font-medium transition-colors hover:text-accent ${pathname === item.href ? "text-foreground" : "text-muted-foreground"
+                }`}
             >
               {item.name}
               {pathname === item.href && (
@@ -59,7 +57,7 @@ export default function Navigation() {
           ))}
         </div>
 
-        
+
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
           {socialLinks.map((social) => (
@@ -74,7 +72,7 @@ export default function Navigation() {
           ))}
         </div>
 
-      
+
         <button
           className="md:hidden text-muted-foreground hover:text-accent transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -100,9 +98,8 @@ export default function Navigation() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${
-                    pathname === item.href ? "text-foreground" : "text-muted-foreground"
-                  }`}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${pathname === item.href ? "text-foreground" : "text-muted-foreground"
+                    }`}
                 >
                   {item.name}
                 </Link>

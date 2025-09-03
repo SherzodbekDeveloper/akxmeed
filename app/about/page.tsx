@@ -6,8 +6,8 @@ import PageTransition from "@/components/page-transition"
 import TypingAnimation from "@/components/typing-animation"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Calendar,  Users, Instagram } from "lucide-react"
-import Link from "next/link"
+import { MapPin, Calendar, Users, Instagram } from "lucide-react"
+import { EnhancedTransitionLink } from '@/utils/transitionLinks'
 
 const travelData = [
   {
@@ -78,37 +78,37 @@ export default function AboutPage() {
                   className="space-y-4 lg:space-y-6"
                 >
                   <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-                    Akhmed is{" "}
+                    Ali Sakhobovich is{" "}
                     <span className="text-accent">
-                      <TypingAnimation texts={["Marketolog", "Businessman", "Bloger"]} speed={150} delay={2000} />
+                      <TypingAnimation texts={["Blogger", "Marketolog", "Businessman"]} speed={150} delay={2000} />
                     </span>
                   </h1>
 
                   <div className="space-y-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
                     <p>
-                      After <span className="font-semibold text-foreground">5+ years of experience</span> in{" "}
-                      <span className="font-semibold text-foreground">Korean language education</span>, I now focus on applying
-                      innovative teaching methods to transform how people learn languages, connecting culture, business and human
-                      behavior. I design comprehensive educational programs with effectiveness and engagement by default.
+                      Currently based in <span className="font-semibold text-foreground">Seoul, South Korea</span>, I’m pursuing my degree while
+                      building a brand around creativity, strategy, and entrepreneurship. My work focuses on connecting
+                      <span className="font-semibold text-foreground"> business innovation</span> with real-world growth opportunities,
+                      inspiring others to explore bold ideas and take action.
                     </p>
 
                     <p className="hidden sm:block">
-                      On my journey, I carry stories, dreams, and inspirations that have shaped me into who I am. My path into
-                      education began at 20 years old, when I found myself fascinated by Korean culture during my first language
-                      exchange. By 25, still self-taught, I had built my first educational program, and realized this was more than
-                      a career. It was a calling.
+                      I started my journey with a passion for culture, travel, and content creation, which quickly evolved
+                      into a deep interest in marketing and entrepreneurship. Over the years, I’ve built multiple projects,
+                      learning to combine creativity with strategy to deliver results that matter.
                     </p>
 
                     <p>
-                      Since 2020, I&apos;ve mixed business strategy with educational innovation.{" "}
-                      <span className="font-semibold text-foreground">I create comprehensive learning systems</span>, test them with
-                      real students, and refine the approach with feedback, analytics, and proven methodologies, delivering results
-                      responsibly, at scale.
+                      Today, I lead <strong>Ahmed School</strong> and <strong>Ahmed Agency</strong> in Jizzakh, where education
+                      and business development meet innovation. Whether it’s helping brands grow or empowering communities through
+                      impactful initiatives, my goal is to inspire growth, connection, and creativity.
                     </p>
                   </div>
 
+
+
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Link href="/contact">
+                    <EnhancedTransitionLink href="/contact">
                       <Button
                         size="lg"
                         className="bg-foreground text-background hover:bg-foreground/90 w-full sm:w-auto group"
@@ -116,7 +116,7 @@ export default function AboutPage() {
                         <Users className="mr-2 h-4 w-4 group-hover:animate-pulse" />
                         MENTORSHIP
                       </Button>
-                    </Link>
+                    </EnhancedTransitionLink>
                     <Button
                       size="lg"
                       variant="outline"
@@ -173,7 +173,7 @@ export default function AboutPage() {
                         className="w-full sm:w-auto"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/axmed_school/" target="_blank" rel="noopener noreferrer">
                           Discover More
                         </a>
                       </Button>
@@ -210,7 +210,7 @@ export default function AboutPage() {
                         className="w-full sm:w-auto"
                         asChild
                       >
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/axmed_school/" target="_blank" rel="noopener noreferrer">
                           Start Learning
                         </a>
                       </Button>
