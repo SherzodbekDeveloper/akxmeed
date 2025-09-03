@@ -6,7 +6,7 @@ import PageTransition from "@/components/page-transition"
 import TypingAnimation from "@/components/typing-animation"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Calendar, Linkedin, Users, Instagram } from "lucide-react"
+import { MapPin, Calendar,  Users, Instagram } from "lucide-react"
 import Link from "next/link"
 
 const travelData = [

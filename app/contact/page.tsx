@@ -11,14 +11,14 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Instagram, Youtube, Send, Linkedin } from "lucide-react"
 
-import { toast, Toaster } from "sonner"
+import { toast } from "sonner"
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "sherzod@example.com",
-    href: "mailto:sherzod@example.com",
+    value: "akxmeed@example.com",
+    href: "mailto:akxmeed@example.com",
   },
   {
     icon: Phone,
@@ -99,7 +99,6 @@ export default function ContactPage() {
 
           <div className="pt-20 sm:pt-24 pb-12 px-4 sm:px-6">
             <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
-              {/* Header */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -116,7 +115,6 @@ export default function ContactPage() {
               </motion.div>
 
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-                {/* Contact Form */}
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -181,7 +179,6 @@ export default function ContactPage() {
                   </Card>
                 </motion.div>
 
-                {/* Contact Information */}
                 <motion.div
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
