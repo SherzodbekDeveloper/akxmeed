@@ -75,11 +75,11 @@ export default function ContactPage() {
         }),
       })
 
-      toast.success("Message sent successfully!")  
+      toast.success("Message sent successfully!")
       setFormData({ name: "", email: "", phone: "", message: "" })
     } catch (error) {
       console.error("Error sending message:", error)
-      toast.error("Failed to send message. Please try again.")  
+      toast.error("Failed to send message. Please try again.")
     }
   }
 
@@ -138,6 +138,21 @@ export default function ContactPage() {
                           className="h-12"
                         />
                       </div>
+                      <div>
+                        <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                          Phone
+                        </label>
+                        <Input
+                          id="phone"
+                          name="phone"
+                          type="tel"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          placeholder="+1 (555) 123-4567"
+                          required
+                          className="h-12"
+                        />
+                      </div>
 
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium mb-2">
@@ -154,6 +169,7 @@ export default function ContactPage() {
                           className="h-12"
                         />
                       </div>
+
 
                       <div>
                         <label htmlFor="message" className="block text-sm font-medium mb-2">
