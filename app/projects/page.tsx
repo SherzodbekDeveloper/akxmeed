@@ -13,7 +13,7 @@ const projects = [
     title: "Korean Learning Platform",
     description:
       "Interactive online platform for Korean language learning with gamified lessons and cultural insights.",
-    image: "/modern-korean-language-learning-app-interface.jpg",
+    image: "",
     tags: ["Education", "Korean", "Interactive"],
     liveUrl: "#",
     githubUrl: "#",
@@ -69,7 +69,6 @@ export default function ProjectsPage() {
 
         <div className="pt-20 sm:pt-24 pb-12 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12">
-            {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -84,25 +83,18 @@ export default function ProjectsPage() {
               </p>
             </motion.div>
 
-            {/* Projects Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {projects.map((project, index) => (
-                <motion.div
+              {projects.map((project) => (
+                <div
                   key={project.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.1 * index }}
-                  whileHover={{ y: -8 }}
-                  className="h-full"
+                  className="h-full transform transition-transform duration-300 hover:-translate-y-2"
                 >
                   <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col">
                     <div className="relative overflow-hidden">
-                      <motion.img
+                      <img
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
-                        className="w-full h-48 sm:h-56 object-cover"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.3 }}
+                        className="w-full h-48 sm:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                     </div>
@@ -135,7 +127,7 @@ export default function ProjectsPage() {
                       </div>
                     </div>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
 
