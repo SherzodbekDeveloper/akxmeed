@@ -36,7 +36,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
    
         <Link href="/" className="text-lg font-bold tracking-tight">
-          Akhmed
+          Akxmeed
         </Link>
 
       
