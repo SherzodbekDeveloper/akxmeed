@@ -140,7 +140,7 @@ export default function ProjectsPage() {
               <Card className="p-6 sm:p-8 bg-accent/5 border-accent/20">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Interested in Working Together?</h3>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  I'm always open to discussing new projects, creative ideas, and opportunities to be part of your
+                  I&apos;m always open to discussing new projects, creative ideas, and opportunities to be part of your
                   vision.
                 </p>
                 <Link href="/contact">

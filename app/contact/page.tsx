@@ -110,7 +110,7 @@ export default function ContactPage() {
                   Get In <span className="text-accent">Touch</span>
                 </h1>
                 <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-                  Ready to start your Korean language journey or discuss business opportunities? I'd love to hear from
+                  Ready to start your Korean language journey or discuss business opportunities? I&apos;d love to hear from
                   you.
                 </p>
               </motion.div>

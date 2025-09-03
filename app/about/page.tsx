@@ -100,7 +100,7 @@ export default function AboutPage() {
                     </p>
 
                     <p>
-                      Since 2020, I've mixed business strategy with educational innovation.{" "}
+                      Since 2020, I&apos;ve mixed business strategy with educational innovation.{" "}
                       <span className="font-semibold text-foreground">I create comprehensive learning systems</span>, test them with
                       real students, and refine the approach with feedback, analytics, and proven methodologies, delivering results
                       responsibly, at scale.
