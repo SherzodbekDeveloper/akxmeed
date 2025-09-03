@@ -57,7 +57,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
               className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center"
             >
-              {/* IMAGE PART */}
+
               <div className="relative order-2 lg:order-1">
                 <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 group">
                   <img
@@ -133,8 +133,94 @@ export default function AboutPage() {
               </div>
             </motion.section>
 
+            <motion.section
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="space-y-6 sm:space-y-8"
+            >
+              <h2 className="text-2xl sm:text-3xl font-bold text-center">
+                <span className="text-accent">Ahmed</span> School
+              </h2>
 
-            {/* Photo Gallery Section */}
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Card 1 - About Ahmed School */}
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="flex flex-col"
+                >
+                  <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src="/ahmedschool.JPG"
+                        alt="Ahmed School"
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
+                    </div>
+                    <div className="p-6 space-y-3">
+                      <h3 className="text-xl font-bold">Learn Korean with Confidence</h3>
+                      <p className="text-muted-foreground">
+                        Ahmed School is a creative and innovative Korean language school
+                        designed to make learning exciting and effective. With modern
+                        teaching methods, personalized support, and immersive experiences,
+                        we help students master Korean naturally and confidently.
+                      </p>
+                      <Button
+                        variant="outline"
+                        className="w-full sm:w-auto"
+                        asChild
+                      >
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                          Discover More
+                        </a>
+                      </Button>
+                    </div>
+                  </Card>
+                </motion.div>
+
+                {/* Card 2 - Courses and Learning Experience */}
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="flex flex-col"
+                >
+                  <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src="/ahmedteam.JPG"
+                        alt="Ahmed School Korean Classes"
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
+                    </div>
+                    <div className="p-6 space-y-3">
+                      <h3 className="text-xl font-bold">Interactive Korean Courses</h3>
+                      <p className="text-muted-foreground">
+                        From beginners to advanced learners, our courses combine
+                        conversation practice, cultural insights, and engaging materials
+                        to make every class fun and productive. Join Ahmed School and
+                        start speaking Korean with confidence!
+                      </p>
+                      <Button
+                        variant="outline"
+                        className="w-full sm:w-auto"
+                        asChild
+                      >
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                          Start Learning
+                        </a>
+                      </Button>
+                    </div>
+                  </Card>
+                </motion.div>
+              </div>
+            </motion.section>
+
+
             <motion.section
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
