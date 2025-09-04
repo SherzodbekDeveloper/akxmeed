@@ -302,7 +302,7 @@ export default function HeroPage() {
                   className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl text-pretty mx-auto lg:mx-0"
                 >
                   Tanishing, <strong>Ali S. Axmedov</strong> — bloger, marketing mutaxassisi va tadbirkor.
-                  <strong> Ahmed School</strong> va <strong>Ahmed Agency</strong> asoschisi sifatida u yoshlar uchun
+                  <strong> Axmed School</strong> va <strong>Axmed Agency</strong> asoschisi sifatida u yoshlar uchun
                   zamonaviy ingliz va koreys tili kurslarini yo‘lga qo‘ygan. Ali marketing bo‘yicha keng tajribaga ega
                   bo‘lib, bizneslarni global bozorda rivojlantirishda yordam beradi. Uning maqsadi — bilim va
                   imkoniyatlar ko‘prigini yaratish.
@@ -387,7 +387,7 @@ export default function HeroPage() {
                       </p>
 
                       <p>
-                        Bugungi kunda <strong>Ahmed School</strong> va <strong>Ahmed Agency</strong> loyihalariga rahbarlik qilaman.
+                        Bugungi kunda <strong>Axmed School</strong> va <strong>Axmed Agency</strong> loyihalariga rahbarlik qilaman.
                         Biz ta’lim va biznesni yangicha yondashuvlar bilan rivojlantirib, yoshlar va brendlar uchun
                         imkoniyatlar yaratmoqdamiz.
                       </p>
@@ -426,7 +426,7 @@ export default function HeroPage() {
                 className="space-y-6 sm:space-y-8"
               >
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
-                  <span className="text-accent">Ahmed</span> School
+                  <span className="text-accent">Axmed</span> School
                 </h2>
 
                 <div className="grid lg:grid-cols-2 gap-8">
@@ -441,16 +441,16 @@ export default function HeroPage() {
                       <div className="relative overflow-hidden">
                         <img
                           src="/ahmedschool.JPG"
-                          alt="Ahmed School"
+                          alt="Axmed School"
                           className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
                       </div>
                       <div className="p-6 space-y-3">
-                        <h3 className="text-xl font-bold">Koreys tilini ishonch bilan o‘rganing</h3>
+                        <h3 className="text-xl font-bold">Koreys va Ingliz tilini ishonch bilan o‘rganing</h3>
                         <p className="text-muted-foreground">
-                          Ahmed School — innovatsion va ijodiy yondashuvga ega koreys tili maktabi.
-                          Zamonaviy metodlar va interaktiv darslar orqali talabalarimiz koreys tilini
+                          A School — innovatsion va ijodiy yondashuvga ega koreys va ingliz tili maktabi.
+                          Zamonaviy metodlar va interaktiv darslar orqali talabalarimiz koreys va ingliz tilini
                           ishonch bilan va tabiiy o‘zlashtirishlari mumkin.
                         </p>
                         <Button variant="outline" className="w-full sm:w-auto" asChild>
@@ -472,15 +472,15 @@ export default function HeroPage() {
                       <div className="relative overflow-hidden">
                         <img
                           src="/ahmedteam.JPG"
-                          alt="Ahmed School darslari"
+                          alt="Axmed School darslari"
                           className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-70 group-hover:opacity-50 transition-opacity"></div>
                       </div>
                       <div className="p-6 space-y-3">
-                        <h3 className="text-xl font-bold">Interaktiv Koreys Kurslari</h3>
+                        <h3 className="text-xl font-bold">Interaktiv Koreys va Ingliz Kurslari</h3>
                         <p className="text-muted-foreground">
-                          Boshlovchilar va ilg‘orlar uchun maxsus kurslarimiz orqali siz koreys tilida
+                          Boshlovchilar va ilg‘orlar uchun maxsus kurslarimiz orqali siz koreys va ingliz tilida
                           bemalol muloqot qilishni o‘rganasiz. Madaniyat, suhbat mashg‘ulotlari va
                           qiziqarli materiallar bilan darslar yanada samarali.
                         </p>
@@ -773,7 +773,7 @@ export default function HeroPage() {
                 <Card className="p-4 sm:p-6 bg-accent/5 border-accent/20">
                   <h3 className="font-bold mb-2">Xizmatlar:</h3>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Koreys tili darslari</li>
+                    <li>• Koreys va Ingliz tili darslari</li>
                     <li>• Biznes konsalting</li>
                     <li>• Marketing strategiyasi</li>
                     <li>• Madaniy almashinuv dasturlari</li>
