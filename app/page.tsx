@@ -1,20 +1,20 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import Navigation from "@/components/navigation"
-import { Mail, ArrowRight, Users, Instagram, MapPin, Calendar, Phone, Linkedin, Send, Youtube } from "lucide-react"
-import Image from "next/image"
 import TypingAnimation from '@/components/typing-animation'
+import { Button } from "@/components/ui/button"
 import { Card } from '@/components/ui/card'
+import { motion } from "framer-motion"
+import { ArrowRight, Calendar, Instagram, Mail, MapPin, Phone, Send, Users, Youtube } from "lucide-react"
+import Image from "next/image"
 
 
 
-import { toast } from "sonner"
-import { useRef, useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { VideoCard } from '@/components/videoCard'
+import { useRef, useState } from 'react'
+import { toast } from "sonner"
 
 
 
@@ -33,8 +33,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+998 95 779 19 03",
+    href: "tel:+998957791903",
   },
   {
     icon: MapPin,
