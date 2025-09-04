@@ -45,10 +45,9 @@ const contactInfo = [
 ]
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-pink-500" },
+  { icon: Instagram, href: "https://www.instagram.com/akxmeed/", label: "Instagram", color: "hover:text-pink-500" },
+  { icon: Send, href: "https://t.me/akxmeed", label: "Telegram", color: "hover:text-blue-500" },
   { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-red-500" },
-  { icon: Send, href: "#", label: "Telegram", color: "hover:text-blue-500" },
-  { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-blue-600" },
 ]
 
 
@@ -321,7 +320,7 @@ export default function HeroPage() {
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
-                <a href="contact">
+                <a href="#contact">
                   <Button variant="outline" size="lg" className="group bg-transparent w-full sm:w-auto hover-lift">
                     <Mail className="mr-2 h-4 w-4 group-hover:animate-pulse" />
                     Bog‘lanish
