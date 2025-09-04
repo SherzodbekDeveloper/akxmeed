@@ -17,7 +17,6 @@ const navItems = [
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/akxmeed", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
   { icon: Send, href: "https://t.me/akxmeed", label: "Telegram" },
 ]
 

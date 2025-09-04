@@ -5,7 +5,7 @@ import TypingAnimation from '@/components/typing-animation'
 import { Button } from "@/components/ui/button"
 import { Card } from '@/components/ui/card'
 import { motion } from "framer-motion"
-import { ArrowRight, Calendar, Instagram, Mail, MapPin, Phone, Send, Users, Youtube } from "lucide-react"
+import { ArrowRight, Calendar, Instagram, Mail, MapPin, Phone, Send, Users } from "lucide-react"
 import Image from "next/image"
 
 
@@ -47,7 +47,6 @@ const contactInfo = [
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/akxmeed/", label: "Instagram", color: "hover:text-pink-500" },
   { icon: Send, href: "https://t.me/akxmeed", label: "Telegram", color: "hover:text-blue-500" },
-  { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-red-500" },
 ]
 
 

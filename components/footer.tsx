@@ -1,12 +1,10 @@
 "use client"
 import { motion } from "framer-motion"
-import { Instagram, Youtube, Send, Linkedin, Heart } from "lucide-react"
+import { Heart, Instagram, Send } from "lucide-react"
 
 const socialLinks = [
   { icon: Instagram, href: "https://instagram.com/akxmeed", label: "Instagram" },
-  { icon: Youtube, href: "https://youtube.com/", label: "YouTube" },
-  { icon: Send, href: "https://t.me/", label: "Telegram" },
-  { icon: Linkedin, href: "https://linkedin.com/", label: "LinkedIn" },
+  { icon: Send, href: "https://t.me/akxmeed", label: "Telegram" },
 ]
 
 export default function Footer() {
@@ -19,8 +17,7 @@ export default function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          
-          {/* Logo and Tagline */}
+
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold text-foreground">Ali Sakhobovich</h2>
             <p className="text-sm text-muted-foreground mt-1">
@@ -29,7 +26,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Social Links */}
           <div className="flex justify-center space-x-6">
             {socialLinks.map((social) => (
               <motion.a
@@ -47,7 +43,6 @@ export default function Footer() {
             ))}
           </div>
 
-          {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-sm text-muted-foreground flex items-center justify-center md:justify-end gap-1">
               Made with <Heart size={14} className="text-accent" /> by Akhmed
