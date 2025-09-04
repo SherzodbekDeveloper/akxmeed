@@ -607,7 +607,7 @@ export default function HeroPage() {
             transition={{ duration: 0.8 }}
             className="text-3xl sm:text-4xl font-bold text-center mb-12"
           >
-            Loyihalar & Blog
+            Loyihalar & <span className='text-red-400'>Blog</span>
           </motion.h2>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
