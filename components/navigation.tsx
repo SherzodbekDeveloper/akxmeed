@@ -6,12 +6,13 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Instagram, Youtube, Send, Menu, X } from "lucide-react"
 import { ThemeToggle } from "./theme-toggle"
 import { useState } from "react"
-import { EnhancedTransitionLink } from '@/utils/transitionLinks'
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Bosh sahifa", href: "#" },
+  { name: "Haqida", href: "#about" },
+  { name: "Loyihalar", href: "#projects" },
+  { name: "Blog", href: "#blog" },
+  { name: "Aloqa", href: "#contact" },
 ]
 
 const socialLinks = [
@@ -37,14 +38,14 @@ export default function Navigation() {
           Akxmeed
         </Link>
 
-
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            <EnhancedTransitionLink
+            <a
               key={item.name}
               href={item.href}
-              className={`relative text-sm font-medium transition-colors hover:text-accent ${pathname === item.href ? "text-foreground" : "text-muted-foreground"
-                }`}
+              className={`relative text-sm font-medium transition-colors hover:text-accent ${
+                pathname === item.href ? "text-foreground" : "text-muted-foreground"
+              }`}
             >
               {item.name}
               {pathname === item.href && (
@@ -53,10 +54,9 @@ export default function Navigation() {
                   className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
                 />
               )}
-            </EnhancedTransitionLink>
+            </a>
           ))}
         </div>
-
 
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
@@ -72,7 +72,6 @@ export default function Navigation() {
           ))}
         </div>
 
-
         <button
           className="md:hidden text-muted-foreground hover:text-accent transition-colors"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -81,7 +80,6 @@ export default function Navigation() {
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-
 
       <AnimatePresence>
         {menuOpen && (
@@ -94,15 +92,16 @@ export default function Navigation() {
           >
             <div className="px-6 py-4 flex flex-col space-y-4">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.name}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors hover:text-accent ${pathname === item.href ? "text-foreground" : "text-muted-foreground"
-                    }`}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    pathname === item.href ? "text-foreground" : "text-muted-foreground"
+                  }`}
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
 
               <div className="flex items-center space-x-4 pt-4 border-t border-border">
