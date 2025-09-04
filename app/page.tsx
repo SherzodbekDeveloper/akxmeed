@@ -313,7 +313,7 @@ export default function HeroPage() {
                 transition={{ duration: 0.8, delay: 1 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               >
-                <a href="about">
+                <a href="#about">
                   <Button size="lg" className="group w-full sm:w-auto hover-lift">
                     Men haqimda
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
