@@ -59,6 +59,7 @@ const travelData = [
     year: "2024",
     country: "Saudi Arabia",
     image: "/tour/saudi.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18483278155060586/',
     description:
       "Makkada va Madinada tarixiy joylarni ziyorat qilib, islom madaniyati bilan yanada yaqindan tanishdim. Ruhiy tajriba hayotimdagi eng unutilmas lahzalardan bo‘ldi.",
     link: "https://instagram.com/highlight/saudi-arabia",
@@ -67,6 +68,8 @@ const travelData = [
     year: "2024",
     country: "Philippines",
     image: "/tour/phill.jpg",
+    href: 'https://www.instagram.com/stories/highlights/17852373135316321/',
+
     description:
       "Tropik orollar va mehmondo‘st xalq orasida dam olib, yangi biznes va madaniyat aloqalarini o‘rnatdim.",
     link: "https://instagram.com/highlight/philippines",
@@ -75,6 +78,7 @@ const travelData = [
     year: "2024",
     country: "Thailand",
     image: "/tour/thai.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18023228243482635/',
     description:
       "Bangkokning shovqin-suronli ko‘chalari va Pattaya plyajlari meni hayratga soldi. Osiyo madaniyatining turfa rang-barangligini his qildim.",
     link: "https://instagram.com/highlight/thailand",
@@ -83,6 +87,7 @@ const travelData = [
     year: "2024",
     country: "South Korea",
     image: "/tour/seul.jpg",
+    href: 'https://www.instagram.com/stories/highlights/17999797430165682/',
     description:
       "Seuldagi zamonaviy hayot va tarixiy joylarni o‘rganib, koreys tili va biznes sohasida tajribamni oshirdim.",
     link: "https://instagram.com/highlight/south-korea",
@@ -91,6 +96,7 @@ const travelData = [
     year: "2025",
     country: "Kazakhstan",
     image: "/tour/astana.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18079354324605652/',
     description:
       "Qozog‘istonning keng dashtlari va boy madaniyati meni ilhomlantirdi. Qo‘shni davlat bilan yaqin aloqalar o‘rnatdim.",
     link: "https://instagram.com/highlight/kazakhstan",
@@ -99,6 +105,7 @@ const travelData = [
     year: "2025",
     country: "Malaysia",
     image: "/tour/malaysia.jpg",
+    href: 'https://www.instagram.com/stories/highlights/17981156159692826/',
     description:
       "Kuala-Lumpurdagi zamonaviy me’morchilik va tabiat go‘zalligi menga katta taassurot qoldirdi.",
     link: "https://instagram.com/highlight/malaysia",
@@ -107,6 +114,7 @@ const travelData = [
     year: "2025",
     country: "China",
     image: "/tour/china.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18030534536061112/',
     description:
       "Pekin va Shanxayda madaniyat va texnologiyaning uyg‘unligini his qilib, yangi imkoniyatlarni kashf qildim.",
     link: "https://instagram.com/highlight/china",
@@ -115,6 +123,7 @@ const travelData = [
     year: "2025",
     country: "Indonesia",
     image: "/tour/indonesia.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18009332693450595/',
     description:
       "Bali orolining tabiiy go‘zalligi va tinch hayoti ruhiy xotirjamlik berdi.",
     link: "https://instagram.com/highlight/indonesia",
@@ -123,6 +132,7 @@ const travelData = [
     year: "2025",
     country: "Singapore",
     image: "/tour/singapore.jpg",
+    href: 'https://www.instagram.com/stories/highlights/18019027625200812/',
     description:
       "Singapurning innovatsion shaharsozligi va boy madaniy merosi menga katta motivatsiya berdi.",
     link: "https://instagram.com/highlight/singapore",
@@ -325,7 +335,6 @@ export default function HeroPage() {
 
       <section id='about' className='bg-gray-50 dark:bg-gray-900'>
         <div className="min-h-screen bg-background">
-          <Navigation />
 
           <div className="pt-20 sm:pt-24 pb-12 px-4 sm:px-6">
             <div className="max-w-6xl mx-auto space-y-4 sm:space-y-20">
@@ -506,7 +515,7 @@ export default function HeroPage() {
                 </motion.section>
 
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
                   {galleryImages.map((image, index) => (
                     <motion.div
                       key={index}
@@ -568,11 +577,20 @@ export default function HeroPage() {
                               className="w-full h-40 sm:h-48 object-cover rounded-lg"
                             />
                             <p className="text-sm sm:text-base text-muted-foreground">{travel.description}</p>
+
+                            {travel.href && (
+                              <a href={travel.href} target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline" className="w-full">
+                                  Tomosha qilish
+                                </Button>
+                              </a>
+                            )}
                           </Card>
                         </div>
                         <div className="absolute left-6 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg z-10"></div>
                         <div className="hidden md:block w-5/12"></div>
                       </motion.div>
+
                     ))}
                   </div>
                 </div>
@@ -608,7 +626,6 @@ export default function HeroPage() {
       </section>
 
       <section id='contact' className="min-h-screen bg-background">
-        <Navigation />
 
         <div className="pt-20 sm:pt-24 pb-12 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12">
