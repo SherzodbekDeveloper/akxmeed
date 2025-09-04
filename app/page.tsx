@@ -541,6 +541,7 @@ export default function HeroPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="space-y-6 sm:space-y-8"
+                id='travel'
               >
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   Sayohat <span className="text-accent">Yo‘li</span>

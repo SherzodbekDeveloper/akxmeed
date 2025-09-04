@@ -320,6 +320,10 @@ body {
   color: var(--accent-foreground);
 }
 
+html {
+  scroll-behavior: smooth; /* Silliq scroll */
+  scroll-padding-top: 80px; /* Navbar balandligi qancha bo'lsa shu yerga yoz */
+}
 
 body {
   transition-property: opacity, background-color, transform, filter;

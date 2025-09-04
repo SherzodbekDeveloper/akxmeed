@@ -10,8 +10,8 @@ import { useState } from "react"
 const navItems = [
   { name: "Bosh sahifa", href: "#" },
   { name: "Haqida", href: "#about" },
+  { name: "Sayohat", href: "#travel" },
   { name: "Loyihalar", href: "#projects" },
-  { name: "Blog", href: "#blog" },
   { name: "Aloqa", href: "#contact" },
 ]
 
